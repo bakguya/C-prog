@@ -1,1 +1,14 @@
+#include <iostream>
+using namespace std;
 
+int main()
+{
+	int count = 0;
+
+	do
+	{
+		cout << "Hello World" << endl;
+	} while (count);
+
+	return 0;
+}
