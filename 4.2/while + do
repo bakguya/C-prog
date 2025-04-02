@@ -5,12 +5,12 @@ int main()
 {
 	while ()
 	{
-	    cout << "Hello World1" << endl;
+		cout << "Hello World1" << endl;
 	}
 
 	do
 	{
-	    cout << "Hello World" << endl;
+		cout << "Hello World" << endl;
 	} while ();
 
 	return 0;
