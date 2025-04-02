@@ -1,0 +1,136 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	do
+	{
+		cout << "Hello World" << endl;
+	} while (false);
+
+	return 0;
+}
+
+int main()
+{
+	do
+	{
+		cout << "Hello World" << endl;
+	} while (false);
+
+	while (false)
+	{
+		cout << "Hello World1" << endl;
+	}
+
+	return 0;
+}
+
+int main()
+{
+	while (false)
+	{
+		cout << "Hello World1" << endl;
+	}
+
+	do
+	{
+		cout << "Hello World" << endl;
+	} while (false);
+
+	return 0;
+}
+
+int main()
+{
+	int count = 0;
+
+	do
+	{
+		cout << "Hello World" << endl;
+	} while (count);
+
+	return 0;
+}
+
+int main()
+{
+	int count = 0;
+
+	do
+	{
+		cout << "Hello World" << endl;
+		cout << count << endl;
+	} while (count <5);
+
+	return 0;
+}
+
+int main()
+{
+	int count = 0;
+
+	do
+	{
+		cout << "Hello World" << endl;
+		count++;
+		cout << count << endl;
+	} while (count <10);
+
+	return 0;
+}
+
+int main() 
+{
+	int count = 0;
+
+	cin >> count;
+	cout << count << endl;
+
+	do
+	{
+		cout << "Hello World" << endl;
+		count++;
+		cout << count << endl;
+	} while (count <10);
+
+	return 0;
+}
+
+int main() 
+{	
+	int a;
+
+	do
+	{
+		cin >> a;
+	} while (a != 0);
+
+	return 0;
+}
+
+int main() 
+{
+	int a;
+
+	while (a != 0)
+	{
+		cin >> a;
+	}
+
+	return 0;
+}
+
+int main()
+{
+	int i;
+
+	for (i = 0; i < 5; i++)
+	{
+		cout << "Hello World" << endl;
+	}
+
+	cout << i << endl;
+
+	return 0;
+}
