@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int count = 0, num;
+    float sum = 0;
+
+    while (count < 10) 
+    {
+        cout << count + 1 << "번째 숫자 입력: ";
+        cin >> num;
+        sum += num;
+        count++;
+    }
+
+    cout << "평균: " << sum / 10 << endl;
+    return 0;
+}
