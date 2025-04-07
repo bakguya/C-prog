@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main() {
+    srand(time(0));
+    int secret = rand() % 100 + 1;
+    int guess;
+
+    do {
+        cout << "1부터 100 사이의 숫자를 맞혀보세요: ";
+        cin >> guess;
+
+        if (guess < secret)
+            cout << "더 큰 수입니다.\n";
+        else if (guess > secret)
+            cout << "더 작은 수입니다.\n";
+
+    } while (guess != secret);
+
+    cout << "정답입니다!" << endl;
+    return 0;
+}
