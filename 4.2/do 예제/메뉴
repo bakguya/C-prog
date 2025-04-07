@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int choice;
+	string arr[6];
+	arr[0] = "라면";
+	arr[1] = "김밥";
+	arr[2] = "우동";
+	arr[3] = "오므라이스";
+	arr[4] = "쫄면";
+	arr[5] = "떡볶이";
+
+	do
+	{
+		cout << "동의 분식집입니다. 무엇을 주문하시겠습니까?\n1. 라면\n2. 김밥\n3. 우동\n4. 오므라이스\n5. 쫄면\n6. 떡볶이" << endl;
+		cin >> choice;
+
+		if (choice < 1 || choice > 6)
+		{
+			cout << "없는 메뉴입니다. 다시 선택해 주십시오." << endl;
+		}
+
+	} while (choice < 1 || choice > 6);
+
+	cout << "주문하신 메뉴는 " << arr[choice - 1] << "입니다." << endl;
+	return 0;
+}
