@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int score;
+	cout << "당신의 성적을 입력하시오(0~100) : ";
+	cin >> score;
+	if (score >= 95)
+	{
+		cout << "당신의 성적은 A+입니다." << endl;
+	}
+
+	else if (score >= 90 && score < 95)
+	{
+		cout << "당신의 성적은 A입니다." << endl;
+	}
+
+	else if (score >= 85 && score < 90)
+	{
+		cout << "당신의 성적은 B+입니다." << endl;
+	}
+
+	else if (score >= 80 && score < 85)
+	{
+		cout << "당신의 성적은 B입니다." << endl;
+	}
+
+	else if (score >= 75 && score < 80)
+	{
+		cout << "당신의 성적은 C+입니다." << endl;
+	}
+
+	else if (score >= 70 && score < 75)
+	{
+		cout << "당신의 성적은 C입니다." << endl;
+	}
+
+	else if (score >= 65 && score < 60)
+	{
+		cout << "당신의 성적은 D+입니다." << endl;
+	}
+
+	else if (score >= 60 && score < 65)
+	{
+		cout << "당신의 성적은 D입니다." << endl;
+	}
+
+	else
+	{
+		cout << "당신의 성적은 F입니다." << endl;
+	}
+
+	return 0;
+}
