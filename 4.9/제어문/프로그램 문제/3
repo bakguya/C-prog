@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+	cout << "3개의 정수를 입력하시오 : ";
+	cin >> a >> b >> c;
+	
+	if (a > b && a > c)
+	{
+		cout << "최대값은 " << a << "입니다." << endl;
+		if (b > c)
+		{
+			cout << "최소값은 " << c << "입니다." << endl;
+		}
+
+		else
+		{
+			cout << "최소값은 " << b << "입니다." << endl;
+		}
+	}
+
+	else if (b > a && b > c)
+	{
+		cout << "최대값은 " << b << "입니다." << endl;
+		if (a > c)
+		{
+			cout << "최소값은 " << c << "입니다." << endl;
+		}
+
+		else
+		{
+			cout << "최소값은 " << a << "입니다." << endl;
+		}
+	}
+
+	else if (c > a && c > b)
+	{
+		cout << "최대값은 " << c << " 입니다." << endl;
+		if (a > b)
+		{
+			cout << "최소값은 " << b << "입니다." << endl;
+		}
+
+		else
+		{
+			cout << "최소값은 " << a << "입니다." << endl;
+		}
+	}
+
+	else
+	{
+		cout << "중복값이 존재합니다." << endl;
+	}
+
+	return 0;
+}
