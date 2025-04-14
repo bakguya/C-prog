@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	int count = 0;
+	int n = 1;
+
+	cout << "2에서 9까지 중에서 하나를 입력하세요 : ";
+	cin >> x;
+
+	while (count != 9)
+	{
+		cout << x << " X " << n << " = " << x * n << endl;
+		n++;
+		count++;
+	}
+
+	return 0;
+}
