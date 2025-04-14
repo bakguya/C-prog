@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x = 0;
+	int count = 0;
+	int odd = 0;
+	int even = 0;
+	int res = 0;
+
+	while (count != 100)
+	{
+		x++;
+		res = x % 2;
+		if (res == 0)
+		{
+			even += x;
+		}
+
+		else if(res != 0)
+		{
+			odd += x;
+		}
+	}
+
+	cout << "짝수의 합 : " << even << "\n홀수의 합 : " << odd << endl;
+
+	return 0;
+}
