@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{	
+	int i, sum = 0, data[5];
+	for (i = 0; i < 5; i++)
+	{
+		cin >> data[i];
+	}
+
+	for (i = 0; i < 5; i++)
+	{
+		sum += data[i];
+	}
+
+	cout << sum << endl;
+	cout << sizeof(data) << endl;
+
+	return 0;
+}
