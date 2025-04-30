@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+//디폴트 파라미터 : 사용자가 매개 변수의 값을 제공하지 않으면 기본값이 사용된다. 반대로 매개 변수의 값을 제공하면 사용자 제공 값이 기본값 대신 사용된다.
+//                : 만약 두개의 매개 변수가 있다면 뒤에서부터 기본값을 가지고 나온다.
+
+int sum(int a = 10, int b) 
+{
+	return a + b;
+}
+
+int main()
+{
+	//sum();
+	cout << sum(30) << endl;
+	cout << sum(5, 6) << endl;
+	return 0;
+}
