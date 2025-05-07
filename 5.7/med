@@ -1,0 +1,118 @@
+#include <iostream>
+using namespace std;
+
+void increase10(const int& a)
+{
+	cout << a << endl;
+	//a += 10;
+}
+
+int sum(int a, int b)
+{
+	return a + b;
+}
+
+void swap(int& a, int& b)
+{
+	int n = a;
+	a = b;
+	b = n;
+}
+
+void swap(int* a, int* b)
+{
+	int n = *a;
+	*a = *b;
+	*b = n;
+}
+
+int minValue(int* arr, int size)
+{
+	int num = arr[0];
+	for (int i = 1; i < size; i++)
+	{
+		if (num < arr[i])
+		{
+			continue;
+		}
+
+		else
+		{
+			num = arr[i];
+		}
+	}
+	return num;
+}
+
+int maxValue(int* arr, int size)
+{
+	int num = arr[0];
+	for (int i = 1; i < size; i++)
+	{
+		if (num < arr[i])
+		{
+			continue;
+		}
+
+		else
+		{
+			num = arr[i];
+		}
+	}
+	return num;
+}
+
+int medValue(int* arr, int size)
+{
+	for (int i = 0; i < size - 1; ++i) 
+	{
+		for (int j = 0; j < size - 1 - i; ++j) 
+		{
+			if (arr[j] > arr[j + 1]) 
+			{
+				swap(arr[j], arr[j + 1]);
+			}
+		}
+	}
+
+	return arr[size / 2];
+}
+
+int main()
+{
+	int a = 10;
+	const int& b = a;
+	int arr[] = { 10, 20, 30, 40, 50 };
+	int c = 30;
+	
+	a = 50;
+
+	increase10(a);
+
+	cout << a << endl;
+
+	cout << sum(a, b) << endl;
+
+	sum(arr[1], arr[4]);
+
+	swap(a, c);
+
+	cout << a << ", " << c << endl;
+
+	//swap(arr[0], arr[4]);
+	//swap(arr[1], arr[3]);
+
+	swap(&arr[0], &arr[4]);
+	swap(&arr[1], &arr[3]);
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << arr[i] << endl;
+	}
+
+	cout << minValue(arr, 5) << endl;
+	cout << minValue(arr, 5) << endl;
+	cout << medValue(arr, 5) << endl;
+
+	return 0;
+}
