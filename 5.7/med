@@ -49,7 +49,7 @@ int maxValue(int* arr, int size)
 	int num = arr[0];
 	for (int i = 1; i < size; i++)
 	{
-		if (num < arr[i])
+		if (num > arr[i])
 		{
 			continue;
 		}
@@ -111,7 +111,7 @@ int main()
 	}
 
 	cout << minValue(arr, 5) << endl;
-	cout << minValue(arr, 5) << endl;
+	cout << maxValue(arr, 5) << endl;
 	cout << medValue(arr, 5) << endl;
 
 	return 0;
