@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void increase10(const int& a)
+{
+	cout << a << endl;
+	a += 10;
+}
+
+int sum(int a, int b)
+{
+	return a + b;
+}
+
+int main()
+{
+	int a = 10;
+	const int& b = a;
+	
+	a = 50;
+
+	increase10(a);
+
+	cout << a << endl;
+
+	cout << sum(a, b) << endl;
+
+	return 0;
+}
