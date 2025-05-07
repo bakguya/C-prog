@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 10;//const = constant, 상수 / 변수 값을 한 번 초기화 하면 변경 불가능
+	const int& b = a;
+	b = 50;
+	a = 50;
+	cout << a << endl;
+	return 0;
+}
