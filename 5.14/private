@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+struct Monster
+{
+private:
+	float Health;
+	float ATK;
+	float DEF;
+	//float& HP = Health;
+};
+
+int main()
+{
+	Monster slime;
+	slime.Health = 100;
+	slime.ATK = 10.5;
+	slime.DEF = 3.5;
+	//slime.HP = 50;
+
+	cout << slime.Health << ", " << slime.ATK << ", " << slime.DEF << endl;
+
+	return 0;
+}
