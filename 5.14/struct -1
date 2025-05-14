@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-struct Student
+struct Student// 구조체 생성, 구조체의 이름은 항상 대문자로 시작해야 함
 {
 	int age;
 	int dept;
