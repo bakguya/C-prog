@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+struct Student
+{
+private:
+	int age;// 맴버 변수
+	int dept;
+	int height;
+
+public:
+	void setAge(int a)// 맴버 함수
+	{
+		age = a;
+	}
+
+	int getAge()
+	{
+		return age;
+	}
+};
+
+int main()
+{
+	Student kws;
+	kws.age = 21;
+	kws.dept = 10;
+	kws.height = 180.3;
+	kws.setAge(10);
+	kws.getAge();
+
+	cout << kws.age << endl;
+  cout << kws.dept << "," << kws.height << endl;
+  
+	return 0;
+}
